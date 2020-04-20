@@ -58,7 +58,7 @@ directory '/vagrant/' do
   mode '0777'
 end
 
-directory '/home/vagrant/downloads' do
+directory '/home/ubuntu/Downloads' do
   action :create
   mode '0777'
 end
