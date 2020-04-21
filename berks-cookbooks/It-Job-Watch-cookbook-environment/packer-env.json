@@ -28,13 +28,15 @@
     },
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu",
-    "ami_name": "sara-eng54-python_AMI{{timestamp}}"
+    "ami_name": "sara-eng54-IT-Jobs-watch-AMI1{{timestamp}}"
   }],
+
   "provisioners": [
-    {
-      "type": "chef-solo",
-      "cookbook_paths": ["./berks-cookbooks"],
-      "run_list":["It-Job-Watch-cookbook-environment::default"]
-    }
-  ]
+  {
+    "type": "chef-solo",
+    "cookbook_paths": ["./berks-cookbooks"],
+    "run_list":["It-Job-Watch-cookbook-environment::default"]
+  }
+
+ ]
 }
