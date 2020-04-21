@@ -94,3 +94,24 @@ bash 'installing app requirements.txt' do
     pip3 install zipp==0.5.2
   EOH
 end
+
+# bash 'install_java' do
+#   code <<-EOH
+#     sudo apt-get -y install default-jdk default-jre
+#     EOH
+# end
+
+
+bash 'install_default_jre' do
+  code <<-EOH
+    sudo apt-get -y install default-jre
+    EOH
+end
+
+
+
+bash 'install_default_jdk' do
+  code <<-EOH
+    sudo apt-get -y install default-jdk
+    EOH
+end
