@@ -19,7 +19,6 @@ describe package 'python3-pip' do
   it { should be_installed}
 end
 
-
 describe package 'python3.7' do
    it { should be_installed}
    its ('version') {should cmp > '3.7*'}
